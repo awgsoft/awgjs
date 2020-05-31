@@ -15,6 +15,9 @@ AWG.js is browser edition of AWG using Web Audio API.
 * almost unlimited numbers of modules is available
 * FM modulation
 
+## Screen (AWG UI repository)
+https://awgsoft.github.io/awgui/
+
 ## Environment
 
 * npm(node.js) + typescript + webpack
@@ -31,13 +34,13 @@ npm run build
 ```
 
 #### basically
-copy `./dist/awg.js` and link from your HTML
+copy `./dist/awg.js,awgproc.js` and link from your HTML
 
 ```
 Awg.load(mml, options);
 Awg.play();
 ```
-For more information, Please refer to AWG UI repository
+For more information, Please refer to [AWG UI repository](https://github.com/awgsoft/awgui)
 
 ### from node.js (headless)
 In the future, support headless(browserless) playback

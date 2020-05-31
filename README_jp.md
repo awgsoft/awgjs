@@ -11,6 +11,9 @@ AWG -> awgsoft.com
 * OSC(サイン波,矩形波, etc.) + ADSR EG をほぼ無制限に使用可能
 * FM変調
 
+## 操作画面 (AWG UIリポジトリ)
+https://awgsoft.github.io/awgui/
+
 ## 環境
 * npm(node.js) + typescript + webpack
 * Web Audio API (Audio Worklet)
@@ -26,14 +29,14 @@ npm run build
 ```
 
 #### 基本的な使い方
-`./dist/awg.js` をHTMLからリンク
+`./dist/awg.js,awgproc.js` をHTMLからリンク
 
 ```
 Awg.load(mml, options);
 Awg.play();
 ```
 
-詳細はAWG UIリポジトリを参照
+詳細は[AWG UIリポジトリ](https://github.com/awgsoft/awgui)を参照
 
 ### node.jsからの使用
 Selenium等でのブラウザレスな再生に対応予定
