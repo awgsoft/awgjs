@@ -19,7 +19,7 @@ export class WorkletPlayer {
     //this.soundLevels = [];
     this.options = options;
     this.context = new AudioContext();
-    this.context.audioWorklet.addModule("../awgjs/dist/awgproc.js").then(() => {
+    this.context.audioWorklet.addModule("./dist/awgproc.js").then(() => {
       this.node = new AwgWorkletNode(this.context, "awg-worklet-processor");
 
       if (this.node) {
